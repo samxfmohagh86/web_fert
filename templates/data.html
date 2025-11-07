@@ -111,7 +111,7 @@
                     {% for item in data %}
                     <tr>
                         <!-- نضيف data-date attribute بدلاً من عرض التاريخ مباشرة -->
-                        <td class="date-cell" data-date="{{ item.created_at }}">{{ item.created_at }}</td>
+                        <td class="date-cell" data-date="{{ item.recorded_at }}">{{ item.recorded_at }}</td>
 
                         <td>{{ item.Temperature }}</td>
                         <td>{{ item.Moisture }}</td>
