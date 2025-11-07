@@ -38,7 +38,7 @@ def submit_data():
         }
         
         # إدخال البيانات إلى Supabase
-        response = supabase.table('sensor_data').insert(data).execute()
+        response = supabase.table('sensors').insert(data).execute()
         
         return jsonify({
             'success': True,
@@ -56,7 +56,7 @@ def submit_data():
 def view_data():
     try:
         # جلب البيانات من Supabase
-        response = supabase.table('sensor_data').select('*').execute()
+        response = supabase.table('sensors').select('*').execute()
         return render_template('data.html', data=response.data)
     except Exception as e:
         return f'خطأ في جلب البيانات: {str(e)}'
