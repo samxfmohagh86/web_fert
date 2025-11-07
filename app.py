@@ -8,8 +8,8 @@ load_dotenv()
 app = Flask(__name__)
 
 # تهيئة Supabase
-supabase_url = os.getenv('SUPABASE_URL')
-supabase_key = os.getenv('SUPABASE_KEY')
+supabase_url = os.getenv('https://bxqamnrnxjyuwdqxyyps.supabase.co')
+supabase_key = os.getenv('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4cWFtbnJueGp5dXdkcXh5eXBzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIxNjE4MzksImV4cCI6MjA3NzczNzgzOX0.C-b7v5w5Ld545TvhYXV12447YpybweUS0_bB7_SlTC8')
 supabase: Client = create_client(supabase_url, supabase_key)
 
 @app.route('/')
