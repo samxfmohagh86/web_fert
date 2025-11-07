@@ -91,30 +91,28 @@
                         <th>الكربون</th>
                         <th>نوع التربة</th>
                         <th>المحصول</th>
-                        <th>السماد</th>
                         <th>الماء pH</th>
                         <th>مستوى الماء</th>
-                        <th>العكورة</th>
+                        <th>Turbidity</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for item in data %}
                     <tr>
                         <td>{{ item.created_at if item.created_at else 'N/A' }}</td>
-                        <td>{{ item.temperature }}</td>
-                        <td>{{ item.moisture }}</td>
-                        <td>{{ item.rainfall }}</td>
-                        <td>{{ item.ph }}</td>
-                        <td>{{ item.nitrogen }}</td>
-                        <td>{{ item.phosphorous }}</td>
-                        <td>{{ item.potassium }}</td>
-                        <td>{{ item.carbon }}</td>
-                        <td>{{ item.soil }}</td>
-                        <td>{{ item.crop }}</td>
-                        <td>{{ item.fertilizer }}</td>
-                        <td>{{ item.water_ph }}</td>
-                        <td>{{ item.water_level }}</td>
-                        <td>{{ item.turbidity }}</td>
+                        <td>{{ item.Temperature }}</td>
+                        <td>{{ item.Moisture }}</td>
+                        <td>{{ item.Rainfall }}</td>
+                        <td>{{ item.PH }}</td>
+                        <td>{{ item.Nitrogen }}</td>
+                        <td>{{ item.Phosphorous }}</td>
+                        <td>{{ item.Potassium }}</td>
+                        <td>{{ item.Carbon }}</td>
+                        <td>{{ item.Soil }}</td>
+                        <td>{{ item.Crop }}</td>
+                        <td>{{ item.Water_pH }}</td>
+                        <td>{{ item.Water_Level }}</td>
+                        <td>{{ item.Turbidity }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
