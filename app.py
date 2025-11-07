@@ -21,20 +21,20 @@ def submit_data():
     try:
         # الحصول على البيانات من النموذج
         data = {
-            'temperature': float(request.form['temperature']),
-            'moisture': float(request.form['moisture']),
-            'rainfall': float(request.form['rainfall']),
-            'ph': float(request.form['ph']),
-            'nitrogen': float(request.form['nitrogen']),
-            'phosphorous': float(request.form['phosphorous']),
-            'potassium': float(request.form['potassium']),
-            'carbon': float(request.form['carbon']),
-            'soil': request.form['soil'],
-            'crop': request.form['crop'],
-            'fertilizer': request.form['fertilizer'],
-            'water_ph': float(request.form['water_ph']),
-            'water_level': float(request.form['water_level']),
-            'turbidity': float(request.form['turbidity'])
+            'Temperature': float(request.form['temperature']),
+            'Moisture': float(request.form['moisture']),
+            'Rainfall': float(request.form['rainfall']),
+            'PH': float(request.form['ph']),
+            'Nitrogen': float(request.form['nitrogen']),
+            'Phosphorous': float(request.form['phosphorous']),
+            'Potassium': float(request.form['potassium']),
+            'Carbon': float(request.form['carbon']),
+            'Soil': request.form['soil'],
+            'Crop': request.form['crop'],
+            'Fertilizer': request.form['fertilizer'],
+            'Water_ph': float(request.form['water_ph']),
+            'Water_level': float(request.form['water_level']),
+            'Turbidity': float(request.form['turbidity'])
         }
         
         # إدخال البيانات إلى Supabase
