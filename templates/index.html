@@ -173,10 +173,10 @@
                     <label for="soil">نوع التربة</label>
                     <select id="soil" name="soil" required>
                         <option value="">اختر نوع التربة</option>
-                        <option value="طينية">طينية</option>
-                        <option value="رملية">رملية</option>
-                        <option value="طميية">طميية</option>
-                        <option value="جيرية">جيرية</option>
+                        <option value="Acidic Soil">Acidic Soil</option>
+                        <option value="Alkaline Soil">Alkaline Soil</option>
+                        <option value="Loamy Soil">Loamy Soil</option>
+                        <option value="Neutral Soil">Neutral Soil</option>
                     </select>
                 </div>
                 
@@ -186,7 +186,12 @@
                 </div>
             </div>
             
-          
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fertilizer">نوع السماد</label>
+                    <input type="text" id="fertilizer" name="fertilizer" value="/">
+                </div>
+                
                 <div class="form-group">
                     <label for="water_ph">درجة حموضة الماء</label>
                     <input type="number" step="0.1" id="water_ph" name="water_ph" required>
@@ -196,11 +201,11 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="water_level">مستوى الماء (cm)</label>
-                    <input type="number" step="0.1" id="water_level" name="water_level" required>
+                    <input type="number" step="1" id="water_level" name="water_level" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="turbidity">Turbidity (NTU)</label>
+                    <label for="turbidity">Turbidity</label>
                     <input type="number" step="0.1" id="turbidity" name="turbidity" required>
                 </div>
             </div>
