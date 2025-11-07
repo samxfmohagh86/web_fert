@@ -99,7 +99,7 @@
                 <tbody>
                     {% for item in data %}
                     <tr>
-                        <td>{{ item.created_at if item.created_at else 'N/A' }}</td>
+                        <td>{{ item.recorded_at}}</td>
                         <td>{{ item.Temperature }}</td>
                         <td>{{ item.Moisture }}</td>
                         <td>{{ item.Rainfall }}</td>
