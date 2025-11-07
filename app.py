@@ -32,8 +32,8 @@ def submit_data():
             'Soil': request.form['soil'],
             'Crop': request.form['crop'],
             'Fertilizer': request.form['fertilizer'],
-            'Water_ph': float(request.form['water_ph']),
-            'Water_level': float(request.form['water_level']),
+            'Water_pH': float(request.form['water_ph']),
+            'Water_Level': float(request.form['water_level']),
             'Turbidity': float(request.form['turbidity'])
         }
         
